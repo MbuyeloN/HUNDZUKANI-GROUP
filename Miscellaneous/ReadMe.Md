@@ -1,0 +1,66 @@
+
+---
+
+## 🎨 Features
+- **Navigation Bar** – consistent across all pages  
+- **Light-green styled headings** for branding consistency  
+- **Services Page** – links directly to Contact page forms  
+- **Enquiry Page** – additional enquiry form to gather client information  
+- **Contact Page** – includes company details, a map, and direct form submission  
+- **Responsive Layout** – adapts to both desktop and mobile displays  
+- **Video Integration** – embedded company video for interactive presentation  
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5** – semantic structure and content organization  
+- **CSS3** – styling, layout, and responsive design  
+- **Media** – images, video, and Google Maps iframe  
+- **Version Control** – tracked progress and changes with dated logs  
+
+---
+
+## 📅 Development Log
+- **05-08-2025** – Initial brainstorming; selected website colours and design ideas  
+- **12-08-2025** – Built Home, About, and Contact pages  
+- **20-08-2025** – Added Services and Enquiries pages with forms and direct links  
+- **20-08-2025** – Improved Services page with “Enquire Now” quick links  
+- **20-08-2025** – Updated background colour for better readability  
+- **26-08-2025** – Final touch-ups; ensured full functionality and responsive layout  
+
+---
+
+## 🚀 How to Run the Project
+1. Download or clone this repository.  
+2. Open the project folder in any web browser.  
+   - Double-click **index.html** to launch the homepage.  
+3. Navigate through the site using the top menu.  
+
+> 💡 Tip: For best results, open the **video on the Home page in full-screen mode** and watch it until the end.
+
+---
+
+## 📸 Screenshots
+_(To be added later: screenshots of Home, About, Services, Enquiries, and Contact pages.)_
+
+---
+
+## 🔮 Future Improvements
+- Add **form validation** with JavaScript  
+- Connect forms to a backend for **real enquiry submissions**  
+- Improve **SEO optimization** (meta tags, keywords)  
+- Expand media content (photo gallery or testimonial section)  
+- Apply a **mobile-first design approach** for enhanced responsiveness  
+
+---
+
+## 🙏 Acknowledgements
+- Lecturer and course coordinators for project guidance  
+- Hundzukani Group brand inspiration  
+- Class peers for feedback during development  
+
+---
+
+## 👤 Author
+**Mbuyelo Nkuna**  
+PROG5121 POE Project – 2025

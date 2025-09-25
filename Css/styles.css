@@ -1,0 +1,236 @@
+
+/* ------- Reset (safe & minimal) ------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; line-height: 1.6; color: #0f172a; }
+
+img { max-width: 100%; height: auto; display: block; }
+ul { margin: 0; padding-left: 1.25rem; }
+a { color: inherit; text-decoration: none; }
+video { display: block; border-radius: 12px; box-shadow: 0 10px 25px rgba(2,6,23,.08); }
+
+/* ------- Theme tokens ------- */
+:root{
+  --accent: #29b969;          /* light-green for headings */
+  --accent-strong: #22a05a;
+  --muted: #475569;           /* slate-600 */
+  --border: #e2e8f0;          /* slate-200 */
+  --surface: #ffffff;
+  --surface-alt: #f8fafc;
+  --shadow: 0 10px 24px rgba(2,6,23,.06);
+  --radius: 16px;
+}
+
+/* ------- Header with logo + nav (works with your existing tags) ------- */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+header > img{
+  width: auto;
+  height: auto;
+  max-height: 90px;           /* Keeps your specified dimensions reasonable on small screens */
+}
+
+/* ------- Navigation: <nav><ul><li><a> ------- */
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: .75rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+nav li{ margin: 0; }
+nav a{
+  display: inline-block;
+  padding: .55rem .95rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+nav a:hover,
+nav a:focus-visible{
+  background: var(--surface-alt);
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* ------- Typography (does not override your inline colours) ------- */
+h1, h2, h3{
+  color: var(--accent);
+  line-height: 1.2;
+  margin: 0 0 .75rem 0;
+}
+h1{ font-size: clamp(1.8rem, 2vw + 1rem, 2.6rem); }
+h2{ font-size: clamp(1.25rem, 1vw + 1rem, 1.75rem); }
+p{ margin: 0 0 1rem; color: #0f172a; }
+
+/* ------- Main layout ------- */
+main{ padding: 1.25rem; }
+@media (min-width: 768px){
+  main{ padding: 2rem; }
+}
+
+section{ margin-top: 1.5rem; background: transparent; }
+section[style]{ /* keep inline styles intact; add subtle layout helpers */ }
+
+/* ------- Image gallery block (targets your existing inline flex wrapper) ------- */
+div[style*="display: flex"][style*="flex-wrap: wrap"]{
+  /* Your inline styles control layout; we add only subtle enhancements */
+}
+div[style*="display: flex"][style*="flex-wrap: wrap"] img{
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+/* ------- Footer ------- */
+footer{
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* ------- Utilities (optional; no HTML changes required) ------- */
+.container{ max-width: 1100px; margin-inline: auto; padding-inline: 1rem; }
+.card{ background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow); }
+.center{ text-align: center; }
+.mt-1{ margin-top: .5rem; } .mt-2{ margin-top: 1rem; } .mt-3{ margin-top: 1.5rem; }
+.mb-1{ margin-bottom: .5rem; } .mb-2{ margin-bottom: 1rem; } .mb-3{ margin-bottom: 1.5rem; }
+
+/* ------- Responsive tweaks ------- */
+@media (max-width: 640px){
+  header{ flex-direction: column; align-items: flex-start; }
+  header > img{ max-width: 60%; }
+  nav ul{ gap: .5rem; }
+}
+
+/* ====== Enhancements for Services page (no HTML changes needed) ====== */
+
+/* Make each <section> inside <main> look like a card */
+main > section{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin: 1rem auto;
+  box-shadow: var(--shadow);
+  max-width: 1100px;
+}
+
+/* Tidy section headings spacing */
+main > section h1,
+main > section h2{ margin-bottom: .5rem; 
+}
+
+/* Style the "Enquire Now" <a> links as buttons */
+main > section a[href$="contact.html"]{
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .25px;
+  transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+}
+main > section a[href$="contact.html"]:hover{
+  background: var(--accent-strong);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+
+
+/* ====== Enquiries page (table-based form) ====== */
+main form table{
+  width: 100%;
+  max-width: 860px;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+main form table tr + tr td{ border-top: 1px solid var(--border); }
+main form table td{
+  padding: .9rem 1rem;
+  vertical-align: middle;
+}
+
+/* Label column */
+main form table td:first-child{
+  width: 220px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--surface-alt);
+}
+
+/* Input column already styled by global inputs; just ensure full width */
+main form table td:last-child input[type="text"],
+main form table td:last-child input[type="email"],
+main form table td:last-child input[type="tel"],
+main form table td:last-child input[type="date"],
+main form table td:last-child input[type="number"],
+main form table td:last-child select,
+main form table td:last-child textarea{
+  width: 100%;
+}
+
+/* Submit row alignment */
+main form table tr:last-child td:last-child{
+  text-align: right;
+}
+/* Responsive: stack rows nicely on small screens */
+@media (max-width: 560px){
+  main form table, main form table tbody, main form table tr, main form table td{
+    display: block;
+    width: 100%;
+  }
+  main form table td:first-child{
+    background: transparent;
+    border-top: none !important;
+    padding-bottom: .35rem;
+  }
+  main form table tr{ border-bottom: 1px solid var(--border); }
+  main form table tr:last-child{ border-bottom: none; }
+  main form table tr:last-child td:last-child{ text-align: left; }
+}
+
+
+
+/* ====== Contact page refinements ====== */
+
+/* Top-level tables (contact details) gain spacing and card look via defaults; add margin */
+main > table{
+  margin: 1rem auto;
+}
+
+/* Google Maps iframe: make it responsive-friendly without changing the HTML */
+section iframe{
+  display: block;
+  width: 100% !important;   /* respect container width on small screens */
+  max-width: 100%;
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Contact form table inherits Enquiries table rules */
