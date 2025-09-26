@@ -81,13 +81,32 @@ main{ padding: 1.25rem; }
   main{ padding: 2rem; }
 }
 
-section{ margin-top: 1.5rem; background: transparent; }
-section[style]{ /* keep inline styles intact; add subtle layout helpers */ }
-
-/* ------- Image gallery block (targets your existing inline flex wrapper) ------- */
-div[style*="display: flex"][style*="flex-wrap: wrap"]{
-  /* Your inline styles control layout; we add only subtle enhancements */
+/* ------- Generic <section> spacing ------- */
+section {
+  margin-top: 1.5rem;
+  background: transparent; /* safe reset */
+  padding: 0;              /* let inline styles handle padding if set */
 }
+
+/* ------- Inline-styled <section> elements ------- */
+section[style] {
+  /* Minimal helper so inline styles still work */
+  display: block; 
+  width: 100%;
+}
+
+/* ------- Image gallery block (flex wrapper) ------- */
+div[style*="display: flex"][style*="flex-wrap: wrap"] {
+  gap: 1rem;          /* add spacing between images */
+  justify-content: center;
+}
+
+div[style*="display: flex"][style*="flex-wrap: wrap"] img {
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
 div[style*="display: flex"][style*="flex-wrap: wrap"] img{
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
