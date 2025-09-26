@@ -64,6 +64,12 @@
 
 ---
 
+
+## 👤 Author
+**Mbuyelo Nkuna**  
+WEB DEVELOPMENT POE Project – 2025
+
+
 ## 📖 References  
 
 MDN Web Docs (no date) *HTML: HyperText Markup Language*. Mozilla. Available at: https://developer.mozilla.org/ (Accessed: 26 September 2025).  
@@ -72,11 +78,7 @@ W3C (no date) *HTML Living Standard*. Available at: https://html.spec.whatwg.org
 
 W3C (no date) *CSS Specifications*. Available at: https://www.w3.org/TR/CSS/#css (Accessed: 26 September 2025).  
 
-Font Awesome (no date) *Free Icons*. Available at: https://fontawesome.com/icons (Accessed: 26 September 2025).  
-
 Google Developers (no date) *Maps Embed API Documentation*. Google. Available at: https://developers.google.com/maps/documentation/embed (Accessed: 26 September 2025).  
 
+Font Awesome (no date) *Free Icons*. Available at: https://fontawesome.com/icons (Accessed: 26 September 2025).  
 
-## 👤 Author
-**Mbuyelo Nkuna**  
-WEB DEVELOPMENT POE Project – 2025
