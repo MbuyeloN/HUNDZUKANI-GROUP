@@ -1,4 +1,3 @@
-
 /* ------- Reset (safe & minimal) ------- */
 *,
 *::before,
@@ -155,8 +154,6 @@ main > section a[href$="contact.html"]:hover{
   box-shadow: var(--shadow);
 }
 
-
-
 /* ====== Enquiries page (table-based form) ====== */
 main form table{
   width: 100%;
@@ -214,8 +211,6 @@ main form table tr:last-child td:last-child{
   main form table tr:last-child td:last-child{ text-align: left; }
 }
 
-
-
 /* ====== Contact page refinements ====== */
 
 /* Top-level tables (contact details) gain spacing and card look via defaults; add margin */
@@ -234,3 +229,38 @@ section iframe{
 }
 
 /* Contact form table inherits Enquiries table rules */
+
+
+/* === SOCIAL ICONS (SCOPED TO YOUR EXISTING .social WRAPPER) === */
+.social {
+  margin: 20px 0 8px;
+  display: flex;
+  gap: 14px;
+  justify-content: center; /* change to flex-end if you prefer right-aligned */
+  align-items: center;
+}
+.social a {
+  display: inline-flex;
+  text-decoration: none;
+  line-height: 0; /* trims extra click area around SVG */
+}
+.social svg {
+  display: block;
+  opacity: 0.9;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.social a:hover svg,
+.social a:focus svg {
+  transform: translateY(-2px);
+  opacity: 1;
+  outline: none;
+}
+
+/* Screen-reader only text for icon labels (used inside your <a>) */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
