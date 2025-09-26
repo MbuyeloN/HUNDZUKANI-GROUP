@@ -79,4 +79,4 @@ Google Developers (no date) *Maps Embed API Documentation*. Google. Available at
 
 ## 👤 Author
 **Mbuyelo Nkuna**  
-PROG5121 POE Project – 2025
+WEB DEVELOPMENT POE Project – 2025
