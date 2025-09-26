@@ -67,7 +67,7 @@
 
 ## [v1.5.0] – 23-09-2025
 ### Added
-- Global stylesheet at **/css/styles.css** with minimal reset, theme tokens (light‑green headings), navigation pills, typography, tables, forms, utilities, and responsive tweaks.
+- Global stylesheet at **/css/styles.css** with minimal reset, theme tokens (light-green headings), navigation pills, typography, tables, forms, utilities, and responsive tweaks.
 ### Notes
 - Preserved original HTML structure and inline background colours exactly as provided.
 
@@ -78,13 +78,13 @@
 
 ## [v1.5.2] – 23-09-2025
 ### Improved
-- **Enquiries** page table‑based form: card layout, bold label column, full‑width inputs, and mobile stacking for small screens.
+- **Enquiries** page table-based form: card layout, bold label column, full-width inputs, and mobile stacking for small screens.
 ### Notes
 - Kept the early `</body>` tag in place to respect the “no structure changes” rule; flagged for future HTML validation fix if desired.
 
 ## [v1.5.3] – 23-09-2025
 ### Improved
-- **Contact** page: responsive Google Maps iframe (full‑width within container, rounded corners, shadow).
+- **Contact** page: responsive Google Maps iframe (full-width within container, rounded corners, shadow).
 - Spacing adjustments for the contact details table; contact form inherits enquiry form styling.
 
 ## [v1.6.0] – 23-09-2025
@@ -99,3 +99,25 @@
   - **/Styless.css/styles.css** (duplicate content to match requested folder name)
 ### Changed
 - Injected correct `<link rel="stylesheet">` tags into **index.html** and all files under **/Pages/** (pathing respects folder depth).
+
+---
+
+## [v1.7.0] – 26-09-2025
+### Added
+- Inline SVG social media icons (Facebook, Instagram, LinkedIn, WhatsApp, and X/Twitter) in the footer across **all 5 pages**.
+- Accessibility improvements: `.sr-only` class for screen readers, proper `aria-labels` on social links.
+- New section in **README.md** for References (Harvard Anglia style).
+
+### Fixed
+- Broken image path on Home page (`./Assets/ no3.jpg` → `./Assets/Picture no3.jpg`).
+- Removed invalid `font-style: calc();` inline style.
+- Corrected and simplified CSS rules at lines 85 and 88 for `<section>` handling.
+
+### Improved
+- Footer structure unified across all pages.
+- Gallery images enhanced with borders, shadows, and consistent spacing.
+- Enquiry and Contact forms improved for responsiveness and clarity.
+- CSS tidied: removed empty selectors, added subtle helpers, and refined section spacing.
+
+### Notes
+- Project now fully polished with consistent design across all pages.

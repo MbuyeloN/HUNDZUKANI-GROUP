@@ -1,3 +1,4 @@
+# Hundzukani Group Website
 
 ---
 
@@ -9,6 +10,7 @@
 - **Contact Page** – includes company details, a map, and direct form submission  
 - **Responsive Layout** – adapts to both desktop and mobile displays  
 - **Video Integration** – embedded company video for interactive presentation  
+- **Social Media Integration** – Facebook, Instagram, LinkedIn, WhatsApp, and X/Twitter icons in the footer across all pages (added 26-09-2025)  
 
 ---
 
@@ -27,6 +29,7 @@
 - **20-08-2025** – Improved Services page with “Enquire Now” quick links  
 - **20-08-2025** – Updated background colour for better readability  
 - **26-08-2025** – Final touch-ups; ensured full functionality and responsive layout  
+- **26-09-2025** – Added SVG social media icons in all footers; fixed broken image path; cleaned CSS rules for sections, gallery, and forms  
 
 ---
 
@@ -60,6 +63,20 @@ _(To be added later: screenshots of Home, About, Services, Enquiries, and Contac
 - Class peers for feedback during development  
 
 ---
+
+## 📖 References
+## 📖 References  
+
+MDN Web Docs (no date) *HTML: HyperText Markup Language*. Mozilla. Available at: https://developer.mozilla.org/ (Accessed: 26 September 2025).  
+
+W3C (no date) *HTML Living Standard*. Available at: https://html.spec.whatwg.org/ (Accessed: 26 September 2025).  
+
+W3C (no date) *CSS Specifications*. Available at: https://www.w3.org/TR/CSS/#css (Accessed: 26 September 2025).  
+
+Font Awesome (no date) *Free Icons*. Available at: https://fontawesome.com/icons (Accessed: 26 September 2025).  
+
+Google Developers (no date) *Maps Embed API Documentation*. Google. Available at: https://developers.google.com/maps/documentation/embed (Accessed: 26 September 2025).  
+
 
 ## 👤 Author
 **Mbuyelo Nkuna**  
