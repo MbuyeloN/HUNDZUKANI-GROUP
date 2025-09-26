@@ -44,7 +44,7 @@
 ---
 
 ## 📸 Screenshots
-_(To be added later: screenshots of Home, About, Services, Enquiries, and Contact pages.)_
+- Screenshots of responsive design for two different devices are added in the Assets Folder.
 
 ---
 
@@ -64,7 +64,6 @@ _(To be added later: screenshots of Home, About, Services, Enquiries, and Contac
 
 ---
 
-## 📖 References
 ## 📖 References  
 
 MDN Web Docs (no date) *HTML: HyperText Markup Language*. Mozilla. Available at: https://developer.mozilla.org/ (Accessed: 26 September 2025).  
